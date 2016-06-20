@@ -85,6 +85,11 @@ html {
 		content: '';
 		// animation: shadowImg 1.1s ease-out 1;
 	}
+  img {
+    @include respond(xs) {
+    width: 80%;
+  }
+  }
 }
 .main_img_outer {
 	overflow: hidden;
@@ -110,7 +115,7 @@ html {
 	}
 
 	@include respond(xs) {
-		margin-top: 7px;
+		margin-top: 14px;
 	}
 }
 
@@ -268,8 +273,38 @@ html {
 
 	@include respond(xs) {
 		margin-top: 0;
-		margin-bottom: 18px;
 	}
+
+  .backup_img_sp{
+    display: none;
+
+    @include respond(xs) {
+  		display: block;
+  	}
+
+    ul{
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      li{
+        float: left;
+        width: 50%;
+        background: #004871;
+        padding: 10px;
+        color: #fff;
+        border-right: 2px solid #fff;
+        @include fontsize(12);
+      }
+    }
+
+  }
+
+  img {
+    @include respond(xs) {
+      display: none;
+  	}
+
+  }
 }
 
 .caption_melit_backup {
