@@ -1,0 +1,449 @@
+/* normalize.cssを補うCSS
+-----------------------------------*/
+html {
+  font-size:62.5%;
+}
+
+a {
+  outline:none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li {
+  margin:0;
+  padding:0;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+body {
+  font-family: Meiryo, メイリオ,'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  // font-family: proxima-nova-soft,Apple TP,Helvetica Neue,Helvetica,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,メイリオ,Meiryo,ＭＳ\ Ｐゴシック,Arial,Verdana,"sans-serif";
+  line-height: 1;
+  letter-spacing: 0;
+  background: #ffffff;
+  text-align: justify;
+  overflow:hidden;
+  word-wrap:break-word;
+
+  @include respond(xs) {
+   color: #5a5a5a;
+   -webkit-text-size-adjust: 100%;
+   -webkit-font-smoothing: antialiased;
+ }
+
+ @include respond(md) {
+   color: #686868;
+ }
+
+ @include respond(pc) {
+   color: #515151;
+ }
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+
+/* common
+-----------------------------------*/
+
+img {
+
+  @include respond(xs) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include respond(md) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include respond(pc) {
+    box-shadow:#000 0 0 0;
+  }
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+
+  @include respond(pc) {
+    transition: opacity 0.5s;
+
+    img {
+      transition: opacity 0.5s;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.pc {
+  @include respond(xs) {
+    display: none !important;
+  }
+}
+
+
+.inner {
+  width: 1000px;
+  @include center();
+
+  @include respond(xs) {
+    width: 100%;
+  }
+}
+
+.section_column2 {
+  width: 50%;
+}
+
+
+.section_inner {
+  width: 1000px;
+  padding-bottom: 70px;
+  position: relative;
+  @include center();
+  z-index: 1;
+  opacity: 0;
+
+  @include respond(xs) {
+    opacity: 1;
+    width: 100%;
+    padding-bottom: 0;
+  }
+}
+
+.feature_body {
+  text-align: center;
+}
+
+.tab_panel {
+  // display: block !important;
+
+  @include respond(xs) {
+    display: none;
+  }
+}
+
+.section {
+  position: relative;
+}
+
+
+.l_canvas {
+  position: absolute;
+  top: 0;
+  width:100%;
+  z-index: 0;
+
+  @include respond(xs) {
+  }
+
+}
+
+
+// フッターのコンタクトエリア
+.l_contact {
+  width: 100%;
+  position: relative;
+  background: url(../img/common/footer/footer_contact_bg.gif) left top repeat;
+
+  @include respond(xs) {
+    // margin-top: 40px;
+  }
+}
+
+#contact_canvas {
+  height: 600px;
+}
+
+
+.contact_inner {
+  width: 1000px;
+  position: relative;
+  z-index: 1;
+  @include center();
+  padding-top: 94px;
+  padding-bottom: 100px;
+
+  @include respond(xs) {
+    width: 100%;
+    padding: 20px percentage(20/750) 24px;
+
+  }
+}
+
+// fixed item
+.fixed_item {
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+
+  @include respond(xs) {
+    display: none !important;
+  }
+}
+
+.section_img {
+  position: relative;
+
+  @include respond(xs) {
+    padding: 21px percentage(20/750) 0;
+  }
+}
+
+
+
+/* header
+-----------------------------------*/
+
+.l_header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  top: -80px;
+
+  &.fixed {
+    position: fixed;
+    top: -80px !important;
+    background: #ffffff;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @include respond(xs) {
+      display: none;
+    }
+
+    &.js_active {
+      top: 0 !important;
+    }
+  }
+
+
+  @include respond(xs) {
+    background: #ffffff;
+    height: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+  }
+}
+
+.header_inner {
+  width: percentage(1800/1920);
+  position: relative;
+  @include center();
+  @include cf();
+}
+
+.header_logo {
+  position: absolute;
+  top: 26px;
+  left: 0;
+
+  @include respond(xs) {
+    width: 67px;
+    margin-top: 8px;
+    float: left;
+    position: initial;
+  }
+}
+
+.navi_global {
+  position: absolute;
+  top: 34px;
+  left: 213px;
+
+  @include respond(xs) {
+    position: initial;
+  }
+}
+
+.navi_global_list {
+  @include cf();
+}
+
+.navi_global_item {
+  float: left;
+  margin-left: 37px;
+  @include fontsize(12);
+  color: #4b4a4a;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+
+  @include respond(xs) {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+.navi_global_link {
+
+  @include respond(xs) {
+    display: block;
+    border-top: 1px solid #dddddd;
+    padding: 20px percentage(20/750) 20px;
+    background: #ffffff;
+  }
+}
+
+.header_contact {
+  position: absolute;
+  top: 19px;
+  right: 0;
+
+  @include respond(xs) {
+    position: initial;
+
+  }
+}
+
+#js_nav_global {
+  @include respond(pc) {
+    display: block !important;
+  }
+
+  @include respond(xs) {
+    // background: rgba(255,255,255,0.7);
+    position: fixed;
+    display: none;
+    top: 49px;
+    left: 0;
+    // padding-top: 50px;
+    width: 100%;
+    // height: 100%;
+    // overflow-y: auto;
+    // -webkit-overflow-scrolling: touch;
+    // box-shadow: 0 3px 0 rgba(8,1,2,0.03);
+  }
+}
+
+.js_nav_global_inner {
+
+  @include respond(xs) {
+    // width: 100%;
+    // height: 100%;
+    // overflow-y: auto;
+  }
+}
+
+.menu_nav,
+.menu_nav_icon {
+  display: inline-block;
+  transition: all .4s;
+}
+
+.menu_nav {
+  display: none;
+
+  @include respond(xs) {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #3d3d3d;
+    float: right;
+    display: block;
+    border-radius: 30px;
+  }
+}
+
+.menu_nav_icon {
+  position: absolute;
+  left: 9px;
+  width: 12px;
+  height: 2px;
+  background-color: #ffffff;
+
+  &:nth-of-type(1) {
+    top: 10px;
+  }
+
+  &:nth-of-type(2) {
+    top: 14px;
+  }
+
+  &:nth-of-type(3) {
+    top: 18px;
+  }
+}
+
+
+.section_body_inner {
+  margin-top: 29px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include respond(xs) {
+    margin-top: 14px;
+  }
+}
+
+.l_bread_contents {
+  width: 100%;
+  margin-top: 31px;
+  margin-bottom: 41px;
+
+  @include respond(xs) {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: none;
+  }
+}
+
+.bread_list {
+  @include respond(xs) {
+    padding: 0 percentage(20/750) 0;
+  }
+}
+
+.l_contents {
+  // padding-top: 80px;
+
+  @include respond(xs) {
+    padding-top: 50px;
+  }
+}
+
+.bread_item {
+
+  display: inline-block;
+  @include fontsize(12);
+  position: relative;
+  color: #4c4c4c;
+  top: 3px;
+
+  &:before {
+    content: ">";
+    width: 8px;
+    height: 7px;
+    margin: 0 2px;
+  }
+
+  &:first-child {
+
+    &:before {
+      display: none;
+    }
+
+  }
+}

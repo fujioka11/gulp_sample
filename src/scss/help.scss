@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@import "var";
+@import "mixin";
+@import "animation";
+
+
+html {
+  font-size:62.5%;
+}
+
+.l_header {
+	top: 0 !important;
+}
+
+.guide_inner {
+	display: table;
+	width: 100%;
+
+	@include respond(xs) {
+		display: inherit;
+	}
+}
+
+.guide_thumb {
+	display: table-cell;
+	width: 300px;
+	padding: 0 0 0 0;
+	vertical-align: top;
+
+	@include respond(xs) {
+		display: inherit;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+.guide_body {
+	display: table-cell;
+	padding: 0 0 0 30px;
+	vertical-align: top;
+	position: relative;
+
+	@include respond(xs) {
+		display: inherit;
+		padding: 15px 0 0;
+	}
+
+	.text {
+
+		@include respond(xs) {
+			margin-top: 10px;
+			padding: 0;
+		}
+	}
+}
+
+.thumb_cap {
+	@include fontsize(13);
+	line-height: (24/13);
+	display: inline-block;
+	margin-top: 27px;
+	padding-left: 37px;
+	color: #4c4c4c;
+	text-decoration: underline;
+
+	@include respond(xs) {
+		@include fontsize(11);
+		margin-top: 10px;
+		padding-left: 30px;
+	}
+
+	&.icon_pdf {
+		background: url(../img/common/icon_pdf.png) left top no-repeat;
+		background-size: 27px;
+
+
+		@include respond(xs) {
+			background: url(../img/common/icon_pdf.png) left center no-repeat;
+			background-size: 20px;
+		}
+
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.thumb_cap_date {
+	@include fontsize(12);
+	color: #a2a2a2;
+	margin-top: -5px;
+	display: block;
+
+	@include respond(xs) {
+		@include fontsize(11);
+		text-align: left;
+	}
+}
+
+.guide_body_heading {
+	@include fontsize(22);
+	line-height: (24/18);
+	font-weight: normal;
+	color: #4c4c4c;
+
+	@include respond(xs) {
+		@include fontsize(18);
+		line-height: (20/18);
+	}
+}
+
+
+.download_btn {
+	margin-top: 20px;
+}

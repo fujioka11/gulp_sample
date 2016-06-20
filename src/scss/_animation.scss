@@ -1,0 +1,723 @@
+@charset "utf-8";
+
+@keyframes capacity {
+	0%{
+		background-position: 0 0;
+	}
+	100%{background-position: -24141px 0;
+	}
+}
+
+@keyframes fadeIn1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+}
+
+// capacity
+@keyframes capacity1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes capacity2 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-100px,120px);
+		transform: translate(-100px,120px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes capacity3 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-100px,20px)scale(2);
+		transform: translate(-100px,20px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0.0)scale(1);
+		transform: translate(0.0)scale(1);
+	}
+}
+
+@keyframes capacity4 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+}
+
+
+
+.capacity_img_bese {
+
+	&.js_fadein {
+		-webkit-animation: capacity1 0.3s ease-out 0.2s;
+		animation: capacity1 0.3s ease-out 0.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+
+.capacity_img_dot{
+	&.js_fadein {
+
+		-webkit-animation: capacity2 0.3s ease-out 0.4s;
+		animation: capacity2 0.3s ease-out 0.4s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.capacity_img_airplane{
+	&.js_fadein {
+
+		-webkit-animation: capacity3 0.3s ease-out 0.4s;
+		animation: capacity3 0.4s ease-out 0.6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.capacity_img_cloud{
+	&.js_fadein {
+
+		-webkit-animation: fadeIn1 0.2s ease-out 0.1s;
+		animation: fadeIn1 0.2s ease-out 0.1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+
+// tool
+@keyframes tool1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-20px,40px);
+		transform: translate(-20px,40px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes tool2 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-90px,40px)scale(2);
+		transform: translate(-90px,40px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0)scale(1);
+		transform: translate(0)scale(1);
+	}
+}
+
+@keyframes tool3 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-90px,40px);
+		transform: translate(-90px,40px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0.0);
+		transform: translate(0.0);
+	}
+}
+
+@keyframes tool4 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-90px,40px)scale(2);
+		transform: translate(-90px,40px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0)scale(1);
+		transform: translate(0)scale(1);
+	}
+}
+
+.tool_img_dot_left {
+	&.js_fadein {
+		-webkit-animation: tool1 0.3s ease-out 0.2s;
+		animation: tool1 0.3s ease-out 0.4s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.tool_img_airplane_left{
+	&.js_fadein {
+
+		-webkit-animation: tool2 0.3s ease-out 0.4s;
+		animation: tool2 0.3s ease-out 0.6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.tool_img_cloud {
+	&.js_fadein {
+		-webkit-animation: fadeIn1 0.2s ease-out 0.1s;
+		animation: fadeIn1 0.2s ease-out 0.1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.tool_img_dot_right{
+	&.js_fadein {
+
+		-webkit-animation: tool3 0.3s ease-out 0.4s;
+		animation: tool3 0.3s ease-out 0.9s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.tool_img_airplane_right{
+	&.js_fadein {
+
+		-webkit-animation: tool4 0.3s ease-out 0.4s;
+		animation: tool4 0.3s ease-out 1.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+// device
+@keyframes device1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(40px,10px);
+		transform: translate(40px,10px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes device2 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(80px,40px);
+		transform: translate(80px,40px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+
+.device_img_dot {
+	&.js_fadein {
+
+		-webkit-animation: device1 0.3s ease-out 0.4s;
+		animation: device1 0.2s ease-out 0.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+.device_img_airplane {
+	&.js_fadein {
+
+		-webkit-animation: device2 0.3s ease-out 0.4s;
+		animation: device2 0.2s ease-out 0.4s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.device_img_cloud {
+	&.js_fadein {
+
+		-webkit-animation: fadeIn1 0.3s ease-out 0.2s;
+		animation: fadeIn1 0.3s ease-out 0.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+
+// share
+@keyframes share1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-20px,0);
+		transform: translate(-20px,0);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+
+@keyframes share2 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-100px,-20px)scale(2);
+		transform: translate(-100px,-20px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes share3 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(20px,0);
+		transform: translate(20px,0);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+
+@keyframes share4 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(100px,20px)scale(2);
+		transform: translate(100px,20px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+.share_img_dot_up {
+	&.js_fadein {
+
+		-webkit-animation: share1 0.3s ease-out 0.4s;
+		animation: share1 0.3s ease-out 0.3s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.share_img_airplane_up {
+	&.js_fadein {
+
+		-webkit-animation: share2 0.3s ease-out 0.4s;
+		animation: share2 0.3s ease-out 0.6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.share_img_dot_under {
+	&.js_fadein {
+
+		-webkit-animation: share3 0.3s ease-out 0.4s;
+		animation: share3 0.3s ease-out 1.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.share_img_cloud {
+	&.js_fadein {
+
+		-webkit-animation: fadeIn1 0.3s ease-out 1.0s;
+		animation: fadeIn1 0.3s ease-out 0.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+
+.share_img_airplane_under {
+	&.js_fadein {
+
+		-webkit-animation: share4 0.3s ease-out 0.4s;
+		animation: share4 0.3s ease-out 1.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+
+// backup
+@keyframes backup1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(40px,120px);
+		transform: translate(40px,120px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes backup2 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(60px,120px)scale(2);
+		transform: translate(60px,120px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0)scale(1);
+		transform: translate(0)scale(1);
+	}
+}
+
+@keyframes backup3 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-60px,120px);
+		transform: translate(-60px,120px);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+}
+
+@keyframes backup4 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transform: translate(-80px,120px)scale(2);
+		transform: translate(-80px,120px)scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transform: translate(0)scale(1);
+		transform: translate(0)scale(1);
+	}
+}
+
+
+
+.backup_img_dot_left {
+	&.js_fadein {
+		-webkit-animation: backup1 0.3s ease-out 0.2s;
+		animation: backup1 0.3s ease-out 0.3s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.backup_img_airplane_left {
+	&.js_fadein {
+		-webkit-animation: backup2 0.3s ease-out 0.2s;
+		animation: backup2 0.3s ease-out 0.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.backup_img_cloud_left{
+	&.js_fadein {
+
+		-webkit-animation: fadeIn1 0.3s ease-out 0.4s;
+		animation: fadeIn1 0.3s ease-out 0.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+
+.backup_img_dot_right {
+	&.js_fadein {
+		-webkit-animation: backup3 0.3s ease-out 0.2s;
+		animation: backup3 0.3s ease-out 0.6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+.backup_img_airplane_right {
+	&.js_fadein {
+		-webkit-animation: backup4 0.3s ease-out 0.2s;
+		animation: backup4 0.3s ease-out 0.9s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+.backup_img_cloud_right{
+	&.js_fadein {
+
+		-webkit-animation: fadeIn1 0.3s ease-out 0.4s;
+		animation: fadeIn1 0.3s ease-out 0.2s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+}
+
+@keyframes popup {
+	0% {
+		transform: scale(0.8);
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes popup {
+	0% {
+		-webkit-transform: scale(0.8);
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@-moz-keyframes popup {
+	0% {
+		-moz-transform: scale(0.8);
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+
+@keyframes rippleAnimation {
+	0% {
+		transform: scale(1, 1);
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1.8, 1.8);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes rippleAnimation {
+	0% {
+		-webkit-transform: scale(1, 1);
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1.8, 1.8);
+		opacity: 0;
+	}
+}
+@-moz-keyframes rippleAnimation {
+	0% {
+		-moz-transform: scale(1, 1);
+		opacity: 0.4;
+	}
+	100% {
+		transform: scale(1.8, 1.8);
+		opacity: 0;
+	}
+}
+
+
+.figure_cloud_img {
+
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		width: 58px;
+		height: 58px;
+		background-color: #52d3ff;
+		border-radius: 50%;
+		box-shadow: 0 0 5px rgba(126,196,235,0);
+		z-index: -1;
+		animation: rippleAnimation 0.6s ease 1.2s infinite;
+	}
+}
+
+
+
+// main
+@keyframes shadowImg {
+	0% {
+		box-shadow: inset 0px 0px 115px 135px #fff;
+	}
+	99% {
+		box-shadow: inset 0px 0px 115px 0 #fff;
+	}
+	100% {
+		box-shadow: inset 0px 0px 0 0 #fff;
+	}
+}
+
+@keyframes mainImg {
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+
+@include keyframes(animationSample){
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+@keyframes zoomImg {
+	0% {
+		// opacity: 0;
+		transform: scale(0.98);
+	}
+	30% {
+		transform: scale(1);
+	}
+	70% {
+		// opacity: 0.8;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoonInOut {
+	0% {
+		transform: scale(0.6);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.6);
+	}
+}
+
+
+
+@-webkit-keyframes bubbly {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    transform: translateY(-32px);
+  }
+}
+
+@-moz-keyframes bubbly {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.1;
+    transform: translateY(-32px);
+  }
+}
+

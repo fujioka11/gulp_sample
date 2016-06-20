@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "var";
+@import "mixin";
+@import "animation";
+
+
+html {
+  font-size:62.5%;
+}
+
+
+.l_header {
+	top: 0 !important;
+}
+
