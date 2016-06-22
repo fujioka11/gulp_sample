@@ -280,14 +280,43 @@ html {
 
     @include respond(xs) {
   		display: block;
+      width: 100%;
+      margin-bottom: 10px;
   	}
 
+    .caption_txt{
+      text-align: left;
+      margin-bottom: 0.5em;
+      @include fontsize(12);
+      color: #004871;
+    }
+
+
     ul{
+      display: table;
+      width: 100%;
+
+      li{
+        display: table-cell;
+        vertical-align: middle;
+        height: 4em;
+        width: 50%;
+        background: #004871;
+        color: #fff;
+        border-right: 2px solid #fff;
+        @include fontsize(11);
+      }
+    }
+
+
+    /*ul{
       overflow: hidden;
       margin-bottom: 10px;
 
       li{
         float: left;
+        vertical-align: middle;
+        height: 4em;
         width: 50%;
         background: #004871;
         padding: 10px;
@@ -295,7 +324,7 @@ html {
         border-right: 2px solid #fff;
         @include fontsize(12);
       }
-    }
+    }*/
 
   }
 
